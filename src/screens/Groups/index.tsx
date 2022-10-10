@@ -8,9 +8,16 @@ import { ListEmpty } from "@components/ListEmpty";
 import { Button } from "@components/Button";
 
 import * as S from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
 export function Groups() {
   const [groups, setGroups] = useState([]);
+  const { navigate } = useNavigation();
+
+  function handleNewGroup() {
+    navigate("new");
+  }
+
   return (
     <S.Container>
       <Header />
@@ -25,7 +32,7 @@ export function Groups() {
         )}
         showsVerticalScrollIndicator={false}
       />
-      <Button title="Criar nova turma" />
+      <Button title="Criar nova turma" onPress={handleNewGroup} />
     </S.Container>
   );
 }
