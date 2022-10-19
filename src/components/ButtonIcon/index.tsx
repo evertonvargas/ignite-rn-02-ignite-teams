@@ -1,5 +1,6 @@
 import { TouchableOpacityProps } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
+
 import * as S from "./styles";
 
 interface ButtonIconProps extends TouchableOpacityProps {

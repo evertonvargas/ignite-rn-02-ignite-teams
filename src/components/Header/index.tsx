@@ -1,7 +1,6 @@
-import * as S from "./styles";
-
-import LogoImg from "@assets/logo.png";
 import { useNavigation } from "@react-navigation/native";
+import LogoImg from "@assets/logo.png";
+import * as S from "./styles";
 
 interface HeaderProps {
   showBackButton?: boolean;
